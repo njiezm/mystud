@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optionnel: pour utiliser la police Inter partout */
+* {
+  font-family: 'Inter', sans-serif;
+}
