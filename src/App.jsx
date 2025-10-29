@@ -5,7 +5,7 @@ import {
 
 // --- Constantes et Utilitaires ---
 
-const MAX_FILE_SIZE = 15 * 1024 * 1024;
+const MAX_FILE_SIZE = 10 * 1024 * 1024; // AUGMENTÉ À 10 MO
 const STORAGE_KEY = 'studyPlatformData';
 const AUTH_KEY = 'studyPlatformAuth';
 const THEME_KEY = 'studyPlatformTheme';
@@ -687,7 +687,7 @@ const App = () => {
 
                 {(resourceForm.type === 'pdf' || resourceForm.type === 'image' || resourceForm.type === 'audio' || resourceForm.type === 'video') ? (
                   <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
-                    <label className={`font-medium whitespace-nowrap ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>Fichier (Max 5Mo)</label>
+                    <label className={`font-medium whitespace-nowrap ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>Fichier (Max 10Mo)</label>
                     <input
                       type="file"
                       onChange={handleFileChange}
@@ -877,7 +877,7 @@ const App = () => {
                   className={`w-full p-3 rounded-lg border focus:ring-indigo-500 focus:border-indigo-500 h-24 resize-none ${themeClasses.inputBg}`}
                 />
                 <div className="flex items-center space-x-4">
-                  <label className={`font-medium whitespace-nowrap ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>Joindre un Fichier (Max 5 Mo)</label>
+                  <label className={`font-medium whitespace-nowrap ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>Joindre un Fichier (Max 10 Mo)</label>
                   <input
                     type="file"
                     name="assignmentFile"
