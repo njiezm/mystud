@@ -3,7 +3,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { FileText, Headphones, Video, BookOpen, Edit, Send, Folder, Plus, Trash2, LayoutGrid, AlertTriangle, X, Eye, Download, Info, Zap } from 'lucide-react';
 
 // Taille maximale autorisée pour un fichier en Base64 (5 MB - Limite pratique pour localStorage)
-const MAX_FILE_SIZE_BYTES = 1024 * 1024 * 5;
+const MAX_FILE_SIZE_BYTES = 1024 * 1024 * 100;
 
 // --- GESTION DE LA PERSISTANCE VIA LOCALSTORAGE ---
 
